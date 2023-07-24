@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-public class Main {
+public class atividade_variaveis {
 	
 	public static void main(String[] args) {
 
