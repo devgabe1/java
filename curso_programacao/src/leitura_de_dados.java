@@ -12,7 +12,7 @@ public class leitura_de_dados {
 		char h;
 		
 		System.out.print("String: ");
-		x = sc.next();
+		x = sc.nextLine();
 		
 		System.out.print("\nInt: ");
 		y = sc.nextInt();
