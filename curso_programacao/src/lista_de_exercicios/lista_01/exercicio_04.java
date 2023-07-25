@@ -24,8 +24,6 @@ public class exercicio_04 {
 		
 		salario = horas * valor_hora;
 		
-		System.out.println("\f");
-		
 		System.out.println("Número do funcionário: " + num);
 		System.out.printf("Salário R$ %.2f", salario);
 		
