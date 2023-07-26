@@ -1,3 +1,4 @@
+package didaticos;
 import java.util.Scanner;
 
 public class leitura_de_dados {

@@ -1,3 +1,4 @@
+package lista_de_exercicios;
 import java.util.Locale;
 
 public class atividade_variaveis {
