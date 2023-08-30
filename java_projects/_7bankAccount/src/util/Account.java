@@ -7,13 +7,13 @@ public class Account {
 		private static double balance;
 		
 		public Account (int number, String holder, double balance) {
-			this.number = number;
-			this.holder = holder;
-			this.balance = balance;
+			Account.number = number;
+			Account.holder = holder;
+			Account.balance = balance;
 		}
 		public Account (int number, String holder) {
-			this.number = number;
-			this.holder = holder;
+			Account.number = number;
+			Account.holder = holder;
 		}
 		
 		public static int getNumber() {
