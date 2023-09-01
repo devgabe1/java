@@ -62,7 +62,7 @@ public class Data {
 		percentage = 100 / totalPeople * peopleUnder;
 		return percentage;
 	}
-	
+
 	public String namesUnderPick(Data[] dataArray) {
 		for(Data person : dataArray) {
 			if (person.getAge() < 16) {
@@ -71,10 +71,7 @@ public class Data {
 		}
 		return namesUnder;
 	}
-	
-	
-	
-	}
+}
 
 
 
