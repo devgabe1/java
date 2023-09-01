@@ -27,11 +27,13 @@ public class Program {
 			dataArray[i] = new Data(name, age, height);
 		}
 		Data dataObject = new Data();
-		
-		
-		float average = dataObject.average_height(dataArray);
+		dataObject.calcUnder16(dataArray);
 
-		System.out.println(average);
+		
+        for (Data person : dataArray) {
+            System.out.println(person); // This will invoke the toString method for each Data object
+        }
+
 		sc.close();
 	}
 }
