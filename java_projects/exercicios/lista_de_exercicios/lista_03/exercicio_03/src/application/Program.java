@@ -27,12 +27,9 @@ public class Program {
 			dataArray[i] = new Data(name, age, height);
 		}
 		Data dataObject = new Data();
-		dataObject.calcUnder16(dataArray);
-
-		
-        for (Data person : dataArray) {
-            System.out.println(person); // This will invoke the toString method for each Data object
-        }
+		System.out.println("Average Height: " + String.format("%.2f", dataObject.average_height(dataArray)));
+		System.out.println("People under 16 years old: " + String.format("%.1f", dataObject.calcUnder16(dataArray)) + "%");
+		System.out.println(dataObject.namesUnderPick(dataArray));
 
 		sc.close();
 	}
