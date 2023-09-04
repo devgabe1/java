@@ -42,8 +42,6 @@ public class MyNumber {
 				higherNumber = numberArray[i].getNumber();
 				position = i;
 			}
-			
-
 		}
 	}
 
