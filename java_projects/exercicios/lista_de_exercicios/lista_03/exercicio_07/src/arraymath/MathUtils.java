@@ -22,9 +22,10 @@ public class MathUtils {
 		for (int i = 0; i < array.length; i++) {
 			sum += array[i];
 		}
-		return average =  sum / array.length;
+		average =  sum / array.length;
+		return average;
 	}
-	
+
 	public void printBelowArray() {
 		for (double number : array) {
 			if (number < average) {
