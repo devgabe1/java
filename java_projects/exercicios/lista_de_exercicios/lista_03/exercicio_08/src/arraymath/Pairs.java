@@ -27,11 +27,7 @@ public class Pairs {
 				pairs ++;
 			}
 		}
-		if (pairs == 0){
-			averagePairs = 0;
-		}else {
-			averagePairs = sum / pairs;
-		}
+		averagePairs = (pairs == 0) ? 0 : sum / pairs;
 	}
 
 	public void print() {
