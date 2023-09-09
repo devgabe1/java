@@ -41,7 +41,7 @@ public class Program {
 		}else {
 			System.out.print("Enter the percentage: ");
 			double percentage = sc.nextDouble();
-			list.get(idIncrease).increaseSalary(percentage);;
+			emp.increaseSalary(percentage);
 		}
 		for(Employee print : list) {
 			System.out.println(print);	
