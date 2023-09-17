@@ -22,7 +22,7 @@ public class Program {
 
 				if(number == matrix[i][j]) {
 					System.out.println("position " + i + "," + j);
-					
+
 					if(j > 0) {
 						System.out.println("Left: " + matrix[i][j-1]);
 					}
@@ -38,8 +38,6 @@ public class Program {
 				}
 			}
 		}
-
 		sc.close();
 	}
-
 }
