@@ -15,8 +15,8 @@ public class Program {
 
 	public static void main(String[] args) throws ParseException {
 		Scanner sc = new Scanner(System.in);
-		
-		SimpleDateFormat sdf =  new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdf =  new SimpleDateFormat("dd/MM/yyyy");	
+
 		
 		System.out.println("Enter cliente data:");
 		System.out.print("Name: ");
@@ -49,7 +49,12 @@ public class Program {
 			Integer quantityProduct = sc.nextInt();
 			Product product = new Product(nameProduct, priceProduct);
 			OrderItem item = new OrderItem(quantityProduct, priceProduct, product);
+			order.addItem(item);
+			
 		}
+		System.out.println();
+		System.out.println(order);
+		
 		sc.close();
 	}
 }
