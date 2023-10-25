@@ -7,9 +7,9 @@ public class individualPayer extends Payer{
 	public individualPayer() {
 	}
 	
-	public individualPayer(String name, double anualIncome, double healthExpenditures, double healthExpenditures2) {
-		super(name, anualIncome, healthExpenditures);
-		healthExpenditures = healthExpenditures2;
+	public individualPayer(String name, double anualIncome, double healthExpenditures) {
+		super(name, anualIncome);
+		this.healthExpenditures = healthExpenditures;
 	}
 	
 	public double getHealthExpenditures() {

@@ -2,28 +2,28 @@ package entities;
 
 public class companyPayer extends Payer{
 
-	private Double employees;
+	private int employees;
 	
 	public companyPayer() {
 	}
 	
-	public companyPayer(String name, double anualIncome, double healthExpenditures, Double employees) {
-		super(name, anualIncome, healthExpenditures);
+	public companyPayer(String name, double anualIncome, int employees) {
+		super(name, anualIncome);
 		this.employees = employees;
 	}
 	
-	public Double getEmployees() {
+	public int getEmployees() {
 		return employees;
 	}
 
-	public void setEmployees(Double employees) {
+	public void setEmployees(int employees) {
 		this.employees = employees;
 	}
 
 	@Override
 	public Double taxPaid() {
 		double tax = 0;
-		if(employees > 10) {
+		if(employees < 10) {
 			tax = anualIncome * 0.16;
 		}
 		else {

@@ -8,7 +8,7 @@ public abstract class Payer {
 	public Payer() {
 	}
 
-	public Payer(String name, double anualIncome, double healthExpenditures) {
+	public Payer(String name, double anualIncome) {
 		this.name = name;
 		this.anualIncome = anualIncome;
 	}
