@@ -43,18 +43,16 @@ public class Program {
 				payerList.add(new companyPayer(name, income, employees));
 			}
 		}
-			System.out.println("\nTAXES PAID:");
-			for(Payer c : payerList) {
-				System.out.println(c.getName() + ": $ " + String.format("%.2f", c.taxPaid()));
-			}
+		double sum = 0;
+		System.out.println("\nTAXES PAID:");
+		for(Payer c : payerList) {
+			System.out.println(c.getName() + ": $ " + String.format("%.2f", c.taxPaid()));
+			sum +=  c.taxPaid();
+		}
 
-			System.out.print("\nTOTAL TAXES: $");
-			double sum = 0;
-			for(Payer c : payerList){
-				sum +=  c.taxPaid();
-			}
-			System.out.println(sum);
-			
+		System.out.print("\nTOTAL TAXES: $");
+		System.out.println(sum);
+
 		sc.close();
 	}
 }
